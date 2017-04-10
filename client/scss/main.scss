@@ -1,0 +1,9 @@
+@import './components/index';
+@import './components/extends';
+
+.skills {
+  @extend %centered;
+  height: 30vh;
+  width: 100%;
+  background-color: red;
+}

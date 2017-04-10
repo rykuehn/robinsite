@@ -7,42 +7,47 @@ const Resume = () => {
       <div style={styles.check}>
         <div style={styles.heading}> Education </div>
         <div style={styles.list}>
-          <InfoBlock heading="Univeristy of San Francisco"
-                     subheading="Master's Degree"
-                     bullets={["ca teaching credential", "second bullet point"]} />
-          <InfoBlock heading="Univeristy of San Francisco"
-                     subheading="Bachelor's Degree"
-                     bullets={["garden project", "lalala"]} />
-        </div>
-      </div>
-
-      <div div style={styles.check}>
-        <div style={styles.heading}> Projects </div>
-        <div style={styles.list}>
-          <InfoBlock heading="React-Ion"
-                     subheading="Developer tool"
-                     bullets={["react", "redux"]} />
-          <InfoBlock heading="OneUp Eldercare"
-                     subheading="nursing home search engine"
-                     bullets={["react-router", "lalala"]} />
+          <InfoBlock heading="University of San Francisco"
+                     subheading="Master's Degree in Teaching, CA Multiple Subject Teaching Credential"
+                     dates="2014 - 2015"
+                     location="San Francisco, CA" />
+          <InfoBlock heading="University of San Francisco"
+                     subheading="Bachelor's Degree in History"
+                     dates="2009 - 2013"
+                     location="San Francisco, CA" />
         </div>
       </div>
 
       <div div style={styles.check}>
         <div style={styles.heading}> Work Experience </div>
         <div style={styles.list}>
-          <InfoBlock heading="Capital One"
-                     subheading="Software Engineer"
-                     bullets={["react", "redux"]} />
-          <InfoBlock heading="Hack Reactor"
-                     subheading="Software Engineering Fellow"
-                     bullets={["react-router", "lalala"]} />
-          <InfoBlock heading="The Hamlin School"
-                     subheading="2nd grade associate Teacher"
-                     bullets={["react-router", "lalala"]} />
-          <InfoBlock heading="St. Francis School"
-                     subheading="8th Grade Teacher"
-                     bullets={["react-router", "lalala"]} />
+          <InfoBlock heading="Software Engineer"
+                     subheading="Capital One"
+                     dates="2017 - present"
+                     location="San Francisco, CA" />
+
+          <InfoBlock heading="Software Engineering Fellow"
+                     subheading="Hack Reactor"
+                     dates="2016 - 2017"
+                     location="San Francisco, CA"
+                     bullets={["Taught a variety of workshops on special topics such as Flexbox and Redux.",
+                              "Mentored students as they review recursion, data structures, and other Javascript fundamentals.",
+                              "Collaborated with staff to identify struggling students and developed a learning plan for them."]} />
+
+          <InfoBlock heading="2nd Grade Associate Teacher"
+                     subheading="The Hamlin School"
+                     dates="2015 - 2016"
+                     location="San Francisco, CA"
+                     bullets={["Designed a curriculum that encouraged the creative design process and the use of the laser printer.",
+                              "Participated in professional development conferences in order to stay up to date with best practices."]} />
+
+          <InfoBlock heading="8th Grade Teacher"
+                     subheading="St. Francis School"
+                     dates="2013 - 2014"
+                     location="Lumberton, NM"
+                     bullets={["Lead a team of middle school teachers in long-term curriculum and syllabus development.",
+                              "Facilitated student-led tech talks during our morning meetings.",
+                              "Supplemented textbook math lessons with coding exercises to emphasize real-life application."]} />
         </div>
       </div>
 
@@ -54,10 +59,10 @@ const styles = {
   container: {
     display: 'flex',
     flexDirection: 'column',
-    border: '1px solid black',
     alignItems: 'center',
-    border: '1px solid red',
-    marginTop: '5vmin'
+    paddingTop: '5vmin',
+    paddingBottom: '5vmin',
+    backgroundColor: '#EFF2F4'
   },
   check: {
     border: '1px solid green',

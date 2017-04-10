@@ -1,19 +1,12 @@
 import React from 'react';
+import '../scss/main.scss';
 
 const Skills = () => {
   return(
-    <div style={styles.skills}>
+    <div className="skills">
       This is where the skills graph will go
     </div>
   )
-}
-
-const styles ={
-  skills: {
-    height: '30vh',
-    width: '100%',
-    backgroundColor: 'blue'
-  }
 }
 
 export default Skills;

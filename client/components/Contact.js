@@ -3,7 +3,10 @@ import React from 'react';
 const Contact = () => {
   return(
     <div style={styles.skills}>
-      This is where the Contact graph will go
+      <i className="fa fa-copyright" aria-hidden="true">Robin Kuehn</i>
+      <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+      <i className="fa fa-github-square" aria-hidden="true"></i>
+      <i className="fa fa-envelope-o" aria-hidden="true"></i>
     </div>
   )
 }

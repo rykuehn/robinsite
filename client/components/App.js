@@ -4,6 +4,7 @@ import Intro from './Intro';
 import Resume from './Resume';
 import Skills from './Skills';
 import Contact from './Contact';
+import Projects from './Projects';
 
 export default class App extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class App extends Component {
         <Intro />
         <Resume />
         <Skills />
+        <Projects />
         <Contact />
       </div>);
   }
