@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EFEFEF;
+  width: 100vw;
+}
+
+.resumeComponent {
+  display: flex;
+  width: 74vw;
+  flex-direction: column;
+  margin-Top: 1vh;
+  letter-spacing: .6px;
+}
+
+.check {
+  display: flex;
+  margin-top: 3vmin;
+  justify-content: space-between;
+}
+
+.resumeHeading {
+  font-family: 'Pavanam';
+  font-size: 1em;
+  font-weight: bold;
+  flex-basis: 14vw;
+  padding: 0px;
+  margin: 0px;
+  flex-grow: 1;
+  padding-top: 1vh;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.resume {
+   font-family: 'Lora', serif;
+   font-size: 1.3em;
+   padding: 0px;
+   margin-bottom: 0px;
+}

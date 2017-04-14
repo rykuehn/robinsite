@@ -11,7 +11,7 @@ const styles = {
   container: {
     height: '30vh',
     width: '100%',
-    backgroundColor: 'blue'
+    backgroundColor: '#F58A07'
   }
 }
 

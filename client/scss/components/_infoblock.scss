@@ -1,0 +1,64 @@
+.block {
+  font-family: 'Pavanam';
+  display: flex;
+  justify-content: space-between; 
+  width: 60vw;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
+}
+
+.heading {
+  font-family: 'Pavanam';
+  font-size: 1.1em;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 5vmin;
+  padding-left: 0px;
+  color: #F58A07;
+}
+
+.left {
+  width: 75%;
+  margin-right: 3vw;
+}
+
+.subheading {
+  font-family: 'Pavanam';
+  font-size: .95em;
+  margin-top: 0px;
+  font-weight: 100;
+}
+
+.bullet {
+  font-size: 1em;
+  font-family: 'Pavanam';
+}
+
+.extra {
+  margin: 0px;
+  font-family: 'Pavanam';
+  font-size: .8em;
+}
+
+.extraLocation {
+  margin: 0px;
+  font-family: 'Pavanam';
+  font-size: .9em;
+  font-weight: bold;
+  padding-bottom: .3em;
+}
+
+.location {
+  width: 25%;
+}
+
+ul,li { 
+        list-style-position:inside;
+        margin:0;
+        padding:0; }
+
+ li span {
+        margin-left: -20px;
+    }
+

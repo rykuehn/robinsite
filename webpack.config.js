@@ -19,8 +19,15 @@ module.exports = {
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.scss$/, loader: ExtractTextPlugin.extract({fallback: 'style-loader',
           //resolve-url-loader may be chained before sass-loader if necessary
-          use: ['css-loader', 'sass-loader']}) }
-    ]
+          use: ['css-loader', 'sass-loader']}) },
+      {
+        test: /\.(jpg|png|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[hash].[ext]',
+        },
+      },
+    ],
   },
   plugins: [HtmlWebpackPluginConfig, new ExtractTextPlugin({ filename: 'main.css', disable: false, allChunks: true })]
 }

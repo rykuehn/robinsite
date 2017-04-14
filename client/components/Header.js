@@ -6,7 +6,7 @@ import '../scss/components/_header.scss';
 
 const Header = () => {
   return ( 
-    <div className="container">
+    <div className="containerHead">
       <p className="title">About</p>
       <p className="title"> Contact </p>
       <p className="name"> Robin Kuehn </p>

@@ -5,6 +5,7 @@ import Resume from './Resume';
 import Skills from './Skills';
 import Contact from './Contact';
 import Projects from './Projects';
+import About from './About';
 
 export default class App extends Component {
   render() {
@@ -12,10 +13,12 @@ export default class App extends Component {
      <div style={styles.container}>
         <Header />
         <Intro />
+        <About />
         <Resume />
-        <Skills />
         <Projects />
+        <Skills />
         <Contact />
+
       </div>);
   }
 }

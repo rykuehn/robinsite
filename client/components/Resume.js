@@ -1,16 +1,20 @@
 import React from 'react';
 import InfoBlock from './infoBlock';
+import '../scss/components/_resume.scss';
 
 const Resume = () => {
   return ( 
-    <div style={styles.container}>
-      <div style={styles.check}>
-        <div style={styles.heading}> Education </div>
-        <div style={styles.list}>
+    <div className='container'>
+    <p className="resume">RÉSUMÉ</p>
+    <div className="resumeComponent">
+      <div className="check">
+        <div className='resumeHeading'> EDUCATION </div>
+        <div className='list'>
           <InfoBlock heading="University of San Francisco"
                      subheading="Master's Degree in Teaching, CA Multiple Subject Teaching Credential"
                      dates="2014 - 2015"
                      location="San Francisco, CA" />
+
           <InfoBlock heading="University of San Francisco"
                      subheading="Bachelor's Degree in History"
                      dates="2009 - 2013"
@@ -18,9 +22,9 @@ const Resume = () => {
         </div>
       </div>
 
-      <div div style={styles.check}>
-        <div style={styles.heading}> Work Experience </div>
-        <div style={styles.list}>
+      <div className='check'>
+        <div className='resumeHeading'> WORK EXPERIENCE </div>
+        <div className='list'>
           <InfoBlock heading="Software Engineer"
                      subheading="Capital One"
                      dates="2017 - present"
@@ -30,60 +34,24 @@ const Resume = () => {
                      subheading="Hack Reactor"
                      dates="2016 - 2017"
                      location="San Francisco, CA"
-                     bullets={["Taught a variety of workshops on special topics such as Flexbox and Redux.",
-                              "Mentored students as they review recursion, data structures, and other Javascript fundamentals.",
-                              "Collaborated with staff to identify struggling students and developed a learning plan for them."]} />
+                     bullets={["My primary responsibilities as a Software Engineering Fellow were answering help desk requests and conducint applicant interviews for the coding school. Beyond helping students with questions about Node, React, and general algorithms, taught one hour workshops on Redux and FlexBox."]} />
 
           <InfoBlock heading="2nd Grade Associate Teacher"
                      subheading="The Hamlin School"
                      dates="2015 - 2016"
                      location="San Francisco, CA"
-                     bullets={["Designed a curriculum that encouraged the creative design process and the use of the laser printer.",
-                              "Participated in professional development conferences in order to stay up to date with best practices."]} />
+                     bullets={["As an associate teacher, I shared responsibility with another teacher for 20 second grade girls. I conducted reading assessments and made suggestions to improve their reading skills. Many girls jumped at least 4 levels because of our interventions and support throughout the year. Additionally, I designed social studies curriculum."]} />
 
           <InfoBlock heading="8th Grade Teacher"
                      subheading="St. Francis School"
                      dates="2013 - 2014"
                      location="Lumberton, NM"
-                     bullets={["Lead a team of middle school teachers in long-term curriculum and syllabus development.",
-                              "Facilitated student-led tech talks during our morning meetings.",
-                              "Supplemented textbook math lessons with coding exercises to emphasize real-life application."]} />
+                     bullets={["I lead a team of middle school teachers in long-term curriculum and syllabus development that incorprated Native American folktales as well as other resources and activities that supported culturally responsive teaching. In the classroom, I facilitated student-led tech talks during our morning meetings and supplemented textbook math lessons with coding exercises to emphasize real-life application."]} />
         </div>
       </div>
-
+      </div>
     </div> )
 }
 
-
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    paddingTop: '5vmin',
-    paddingBottom: '5vmin',
-    backgroundColor: '#EFF2F4'
-  },
-  check: {
-    border: '1px solid green',
-    flexGrow: '1',
-    width: '70%',
-    display: 'flex',
-    flexWrap: 'wrap',
-    marginTop: '3vmin'
-  },
-  heading: {
-    fontFamily: 'Pavanam',
-    fontSize: '20px',
-    fontWeight: 'bold',
-    borderBottom: '1px solid gray',
-    flexBasis: '100px',
-    textAlign: 'center',
-  },
-  list: {
-    display: 'flex',
-    flexDirection: 'column'
-  }
-}
 
 export default Resume;

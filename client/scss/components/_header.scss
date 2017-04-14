@@ -1,9 +1,10 @@
-.container {
+.containerHead {
     display: flex;
     justify-content: center;
     height: 10vh;
     font-family: 'Pavanam';
     align-items: center;
+    background-color: white;
 }
 
 .title {
@@ -16,5 +17,6 @@
     flex-basis: 80vmin;
     text-align: center;
     font-size: 30px;
+    font-family: 'Lora', serif;
   }
 

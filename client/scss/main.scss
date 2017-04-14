@@ -1,9 +1,57 @@
 @import './components/index';
 @import './components/extends';
 
-.skills {
-  @extend %centered;
-  height: 30vh;
-  width: 100%;
-  background-color: red;
+body {
+  margin: 0px;
+  background-color: white;
 }
+
+.skillbar {
+  height: 20px;
+  width: 20px;
+  background-color: blue;
+  margin-left: 2vw;
+  margin-bottom: 1.5vh;
+  border-radius: 50%;
+
+}
+
+.skillsgraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Pavanam';
+  font-weight: bold;
+}
+
+.holder {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 5px;
+
+}
+
+.centerIt {
+  display:flex;
+  justify-content: center;
+  padding-top: 1vh;
+}
+
+.hello {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items:flex-end;
+  flex-direction: column;
+  margin-Top: 1.5vh;
+}
+
+.one {
+  background-color: orange;
+}
+
+.zero {
+  background-color: gray;
+}
+
+

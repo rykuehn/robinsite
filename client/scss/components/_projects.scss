@@ -1,0 +1,70 @@
+.skills {
+  width: 100vw;
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vh;
+}
+
+.projectsHeading{
+   font-family: 'Lora', serif;
+   font-size: 1.3em;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.holding {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.box {
+  width: 44vw;
+  margin-Top: 1.5vh;
+  background-color: white;
+  border-radius: 8px;
+  padding: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Pavanam';
+  align-items: center;
+}
+
+.secondary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Two {
+  width: 15vw;
+  flex-grow: 1;
+  height: 20vw;
+}
+
+.leftBox {
+  margin-right: 1vw;
+}
+
+.smallPic {
+  width: 100%;
+  height: 50%;
+}
+
+.bigPic {
+  width: 100%;
+  height: 50%;
+}
+
+.tagME {
+   width: 80%;
+  height: 80%;
+}
+
+.projDescription {
+  margin-top: 0px;
+}
