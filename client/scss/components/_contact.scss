@@ -1,3 +1,5 @@
+@import '../variables';
+
 .footer {
   background-color: white;
   height: 10vh;
@@ -25,6 +27,6 @@ i {
 }
 
 .words {
-    font-family: 'Pavanam';
+    font-family: $primaryFont;
 }
 

@@ -7,10 +7,11 @@ import Contact from './Contact';
 import Projects from './Projects';
 import About from './About';
 
-export default class App extends Component {
-  render() {
-    return (
-     <div style={styles.container}>
+import '../scss/main.scss';
+
+const App = () => {
+  return (
+    <div className="app">
         <Header />
         <Intro />
         <About />
@@ -18,15 +19,9 @@ export default class App extends Component {
         <Projects />
         <Skills />
         <Contact />
-
-      </div>);
-  }
+    </div>
+  )
 }
 
-var styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    margin: '0'
-  }
-}
+export default App;
+

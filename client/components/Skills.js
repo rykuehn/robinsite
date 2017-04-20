@@ -6,13 +6,13 @@ const SkillBar = (props) => {
     <div className="skillsgraph">
       <div> {props.name} </div>
       <div className="holder">
-        {props.numbers.map(num => {
+        {props.numbers.map((num, i) => {
           if(num === 0){
-            return <div className="skillbar zero"></div>;
+            return <div key={i} className="skillbar zero"></div>;
           } else if (num === 1){
-            return <div className="skillbar one"></div>;
+            return <div key={i} className="skillbar one"></div>;
           } else {
-            return <div className="skillbar two"></div>;
+            return <div key={i} className="skillbar two"></div>;
           }
         }).reduce((prev, curr) => [prev, curr])}
       </div>

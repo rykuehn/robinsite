@@ -1,22 +1,40 @@
 import React from 'react';
+import '../scss/main.scss';
 import '../scss/components/_infoblock.scss';
 
 const InfoBlock = (props) => {
+  var divToDisplay = props.display ?  
+    <div className="right">
+       <p className="extraLocation">{props.location}</p>
+       <p className="extra">{props.dates}</p>
+      </div> :
+
+    <div className="right">
+       <div className="print">
+        <i className="fa fa-print" aria-hidden="true"></i>
+        <p> Print Resume </p>
+       </div>
+       <div className="print">
+        <i className="fa fa-download" aria-hidden="true"></i>
+        <p> Download Resume </p>
+       </div>
+     </div>
+    var subheading = props.display ? 
+      <h2 className="heading sub"> {props.subheading} </h2> :
+      <h2 className="heading sub about"> {props.subheading} </h2>
+
   return (
-    <div className="block">
+    <div className="baseComponentContainer block">
       <div className="left">
         <h1 className="heading"> {props.heading} </h1>
-        <h2 className="subheading"> {props.subheading} </h2>
+        {subheading}
         {props.bullets !== undefined ? props.bullets.map((item, i) => {
           return <div className="bullet" key={i}>{item} </div>
         }) : ''}
       </div>
-      <div className="location">
-       <p className="extraLocation">{props.location}</p>
-       <p className="extra">{props.dates}</p>
-      </div>
+      {divToDisplay}
     </div>
-    )
+  )
 }
 
 export default InfoBlock;

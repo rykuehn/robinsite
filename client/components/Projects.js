@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import ProjectsBlock from './ProjectsBlock';
 import '../scss/components/_projects.scss';
 
@@ -8,7 +9,7 @@ import tagme from '../static/tagme.png';
 
 const Projects = () => {
   return(
-    <div className="skills">
+    <Element name="projects" className="skills">
       <p className="projectsHeading"> PROJECTS </p>
 
       <div className="holding">
@@ -29,7 +30,7 @@ const Projects = () => {
         </div>
         </div>
       </div>
-    </div>
+    </Element>
 
   )
 }

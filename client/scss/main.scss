@@ -1,15 +1,55 @@
 @import './components/index';
-@import './components/extends';
 
-body {
-  margin: 0px;
+html, body {
+  margin: 0;
   background-color: white;
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow:hidden;
+}
+
+.baseComponentContainer {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  font-family: $primaryFont; 
+}
+
+.innerCenteredComponent {
+  display: flex;
+  width: 70vw;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: .6px;
+}
+
+.category {
+  display: flex;
+  margin-top: 3vmin;
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
 
 .skillbar {
   height: 20px;
   width: 20px;
-  background-color: blue;
   margin-left: 2vw;
   margin-bottom: 1.5vh;
   border-radius: 50%;
@@ -29,6 +69,12 @@ body {
   justify-content: flex-end;
   margin-left: 5px;
 
+}
+
+.moveDown {
+  background-color: #F8F8F9;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 
 .centerIt {

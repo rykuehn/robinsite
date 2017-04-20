@@ -1,18 +1,23 @@
 import React from 'react';
+import {Element} from 'react-scroll';
+import tire from '../static/tire.svg';
+import computer from '../static/computer.svg';
+import '../scss/main.scss';
+import '../scss/components/_intro.scss';
 
 const Intro = () => {
   return(
-    <div style={styles.container}>
-    </div>
+    <Element name="intro" className="baseComponentContainer intro">
+      <div className="innerIntro">
+        <img className="computer" src={computer} />
+        <div className="plus"> + </div>
+        <img className="loader" src={tire} />
+        <div className="plus equal"> = </div>
+        <div><div className="heart"></div></div>
+      </div>
+    </Element>
     )
 }
 
-const styles = {
-  container: {
-    height: '30vh',
-    width: '100%',
-    backgroundColor: '#F58A07'
-  }
-}
-
 export default Intro;
+

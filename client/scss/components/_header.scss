@@ -1,22 +1,33 @@
-.containerHead {
-    display: flex;
-    justify-content: center;
-    height: 10vh;
-    font-family: 'Pavanam';
+@import '../variables';
+
+.Header {
     align-items: center;
-    background-color: white;
+    height: 8vh;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
 }
 
-.title {
-    flex-basis: 50vmin;
-    text-align: center;
-    font-size: 18px;
+.Header {
+    * {
+      text-align: center; 
+      font-size: 1em; 
+      flex-basis: 50vmin;
+      transition: all .2s ease-in-out;
+    }
+
+    *:hover {
+      color: #FF4242;
+      transform: scale(1.2);
+    }
 }
 
-.name {
-    flex-basis: 80vmin;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Lora', serif;
-  }
+#name {
+    font-size: 3em;
+    font-family:'Playfair Display', serif;
+    font-weight: bold;
+}
+
+#name:hover {
+    color: black;
+}
 

@@ -1,23 +1,28 @@
+@import '../variables';
+
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #EFEFEF;
   width: 100vw;
+
+  .resume {
+   font-family: $secondarySerifFont;
+   font-size: 1.3em;
+   padding: 0px;
+   padding-right: 1vw;
+   margin-bottom: 0px;
+   text-align: center;
+   font-weight: bold;
+   padding-bottom: 0px;
+  }
 }
 
-.resumeComponent {
-  display: flex;
-  width: 74vw;
-  flex-direction: column;
-  margin-Top: 1vh;
-  letter-spacing: .6px;
-}
 
-.check {
+.flexThis {
   display: flex;
-  margin-top: 3vmin;
-  justify-content: space-between;
+  justify-content: center;
+  margin-right: 1vw;
+  margin-top: 0px;
+  padding: 0px;
 }
 
 .resumeHeading {
@@ -28,18 +33,7 @@
   padding: 0px;
   margin: 0px;
   flex-grow: 1;
-  padding-top: 1vh;
+  padding-top: 3vh;
 }
 
-.list {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 2;
-}
 
-.resume {
-   font-family: 'Lora', serif;
-   font-size: 1.3em;
-   padding: 0px;
-   margin-bottom: 0px;
-}
