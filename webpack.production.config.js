@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -11,7 +12,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 module.exports = {
   entry: './client/index.js',
   output: {
-    path: path.join(__dirname, '/dist/'),
+    path: path.resolve('dist'),
     filename: 'index_bundle.js'
   },
   module: {
@@ -29,5 +30,18 @@ module.exports = {
       },
     ],
   },
-  plugins: [HtmlWebpackPluginConfig, new ExtractTextPlugin({ filename: 'main.css', disable: false, allChunks: true })]
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    }),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: { warnings: false },
+      mangle: true,
+      sourcemap: false,
+      beautify: false,
+      dead_code: true
+    }),
+    HtmlWebpackPluginConfig, 
+    new ExtractTextPlugin({ filename: 'main.css', disable: false, allChunks: true })]
 }

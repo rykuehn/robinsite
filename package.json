@@ -7,12 +7,18 @@
     "start": "webpack-dev-server"
   },
   "dependencies": {
+    "babel-cli": "^6.24.1",
     "html-webpack-plugin": "^2.28.0",
+    "node": "^0.0.0",
+    "node-sass-middleware": "^0.11.0",
     "path": "^0.12.7",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
     "webpack": "^2.3.3",
-    "webpack-dev-server": "^2.4.2"
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-hot-middleware": "^2.18.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -30,5 +36,8 @@
     "smoothscroll": "^0.3.0",
     "style-loader": "^0.16.1",
     "url-loader": "^0.5.8"
+  },
+  "engines": {
+    "node": "7.8.0"
   }
 }
