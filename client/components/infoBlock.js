@@ -2,7 +2,16 @@ import React from 'react';
 import '../scss/main.scss';
 import '../scss/components/_infoblock.scss';
 
+
+
 const InfoBlock = (props) => {
+
+  var printResume = function(){
+     var PDF = document.getElementById('resume');
+     PDF.focus();
+     PDF.contentWindow.print();
+  }
+
   var divToDisplay = props.display ?  
     <div className="right">
        <p className="extraLocation">{props.location}</p>
@@ -12,7 +21,8 @@ const InfoBlock = (props) => {
     <div className="right">
        <div className="print">
         <i className="fa fa-print" aria-hidden="true"></i>
-        <p> Print Resume </p>
+        <p onClick={printResume}> Print Resume </p>
+        <iframe id="resume" style={styles.iframe} src="client/static/KuehnResume.pdf"></iframe>
        </div>
        <div className="print">
         <i className="fa fa-download" aria-hidden="true"></i>
@@ -35,6 +45,12 @@ const InfoBlock = (props) => {
       {divToDisplay}
     </div>
   )
+}
+
+var styles ={
+  iframe: {
+    visibility: 'hidden'
+  }
 }
 
 export default InfoBlock;
