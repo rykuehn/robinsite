@@ -22,12 +22,12 @@ const InfoBlock = (props) => {
        <div className="print">
         <i className="fa fa-print" aria-hidden="true"></i>
         <p onClick={printResume}> Print Resume </p>
-        <iframe id="resume" style={styles.iframe} src="client/static/KuehnResume.pdf"></iframe>
        </div>
        <div className="print">
         <i className="fa fa-download" aria-hidden="true"></i>
-        <p> Download Resume </p>
+        <a href="client/static/KuehnResume.pdf" download='client/static/KuehnResume.pdf'> Download Resume </a>
        </div>
+    <iframe id="resume" style={styles.iframe} src="client/static/KuehnResume.pdf"></iframe>
      </div>
     var subheading = props.display ? 
       <h2 className="heading sub"> {props.subheading} </h2> :
