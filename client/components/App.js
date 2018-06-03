@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Header from './Header';
 import Intro from './Intro';
 import Resume from './Resume';
-import Skills from './Skills';
 import Contact from './Contact';
 import Projects from './Projects';
 import About from './About';
@@ -17,7 +16,6 @@ const App = () => {
         <About />
         <Resume />
         <Projects />
-        <Skills />
         <Contact />
     </div>
   )

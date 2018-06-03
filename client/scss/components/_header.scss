@@ -2,32 +2,33 @@
 
 .Header {
     align-items: center;
-    height: 8vh;
-    padding-bottom: 2vh;
-    padding-top: 2vh;
-}
+    box-sizing: border-box;
+    height: 80px;
+    padding: 5px;
 
-.Header {
     * {
-      text-align: center; 
-      font-size: 1em; 
-      flex-basis: 50vmin;
-      transition: all .2s ease-in-out;
+        text-align: center; 
+        font-size: 16px; 
+        float: left;
+        width: 20%;
+        transition: all .2s ease-in-out;
     }
-
+  
     *:hover {
-      color: #FF4242;
-      transform: scale(1.2);
+    color: $red;
+    transform: scale(1.1);
     }
-}
-
-#name {
-    font-size: 3em;
+    
+    #name {
+    font-size: 2.25em;
     font-family:'Playfair Display', serif;
     font-weight: bold;
+    }
+    
+    #name:hover {
+        color: black;
+    }
 }
 
-#name:hover {
-    color: black;
-}
+
 

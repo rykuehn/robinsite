@@ -2,31 +2,22 @@
 
 .footer {
   background-color: white;
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-Items: center;
-  padding-top: 1vh;
+  height: 72px;
+  padding: 30px;
+  box-sizing: border-box;
+  vertical-align: center;
+  
+  .words {
+    font-family: $primaryFont
+  }
 
-}
+  .icons {
+    float: right;
 
-.copyright {
-  flex-grow: 1;
-  padding-left: 4vw;
+    i {
+      margin: 0px 10px;
+    }
+  }
 
-}
-
-.icons {
-  flex-grow: 2;
-  display: flex;
-  justify-content: flex-end;
-}
-
-i {
-  margin: 4vw;
-}
-
-.words {
-    font-family: $primaryFont;
 }
 

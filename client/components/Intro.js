@@ -8,13 +8,11 @@ import '../scss/components/_intro.scss';
 const Intro = () => {
   return(
     <Element name="intro" className="baseComponentContainer intro">
-      <div className="innerIntro">
         <img className="computer" src={computer} />
         <div className="plus"> + </div>
         <img className="loader" src={tire} />
         <div className="plus equal"> = </div>
         <div><div className="heart"></div></div>
-      </div>
     </Element>
     )
 }

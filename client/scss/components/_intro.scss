@@ -3,25 +3,13 @@
 
 .intro {
   background-color: $blue;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  padding: 13px 25%;
+  height: 200px;
+
   
-
-  .innerIntro {
-    display: flex;
-    width: 70vw;
-    height: 30vh;
-    align-items: center;
-
     img {
-      height: 30vh;
+      height: 175px;
     }
-
-    * {
-      margin: 1.5vw;
-      flex-grow: 1;
-    }
-  }
 
 }
 
@@ -32,13 +20,14 @@
 }
 
 .equal {  
-  padding-right: 3vw;
-  padding-bottom: 2vh;
+  padding-right: 42px;
+  padding-bottom: 23px;
 }
 
 
 .loader {
   position: relative;
+  margin-top: 5px;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -69,12 +58,12 @@
 .heart {
   background-color: #E83C3C;
   display: inline-block;
-  height: 100px;
-  margin: 0 10px;
+  height: 80px;
+  margin: 55px 10px;
   position: relative;
   top: 0;
   transform: rotate(-45deg);
-  width: 100px;
+  width: 80px;
   align-self: center;
 }
 
@@ -83,18 +72,18 @@
   content: "";
   background-color: #E83C3C;
   border-radius: 50%;
-  height: 100px;
+  height: 80px;
   position: absolute;
-  width: 100px;
+  width: 80px;
 }
 
 .heart:before {
-  top: -50px;
+  top: -43px;
   left: 0;
 }
 
 .heart:after {
-  left: 50px;
+  left: 43px;
   top: 0;
 }
 

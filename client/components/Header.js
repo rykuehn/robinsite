@@ -6,12 +6,6 @@ import '../scss/main.scss';
 import '../scss/components/_header.scss';
 
 const Header = () => {
-
-  const About = document.querySelector('.about');
-
-  const scrollTo = () => {
-    console.log('about', About);
-  }
   return ( 
     <div className="baseComponentContainer Header">
       <Link to="about" spy={true} smooth={true} duration={500}> About </Link>
